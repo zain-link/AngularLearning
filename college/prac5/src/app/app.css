@@ -1,0 +1,32 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color:rgb(144, 223, 255);
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+div{
+    background-color: red;
+    box-shadow: 10px 10px bisque ;
+    width: 200px;
+    text-align: center;
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    border-radius: 2px;
+    padding: 15px;
+    border: 2px solid black;
+
+}
+button{
+    margin: 10px;
+    padding: 5px;
+    border: none;
+    box-shadow: 3px 3px black;
+    background-color: bisque;
+}
