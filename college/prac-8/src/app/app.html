@@ -1,0 +1,31 @@
+<h2>Inventory Management |
+Shaikh Mohd Affan |
+24bit53 |
+SY-BSC-IT |
+AIKTC</h2>
+<!-- Input Form -->
+<div>
+<input type="text" #name placeholder="Enter Product Name" />
+<input type="number" #qty placeholder="Enter Quantity" />
+<input type="number" #price placeholder="Enter Price" />
+<button (click)="addProduct (name, qty, price)">Add Product</button>
+</div>
+<hr>
+<!-- Product Table -->
+<table border="1" cellpadding="5" cellspacing="0">
+<thead>
+<tr>
+<th>Name</th>
+<th>Quantity</th>
+<th>Price</th>
+</tr>
+</thead>
+<tbody>
+<tr *ngFor="let p of products">
+<td>{{ p.name | titlecase }}</td>
+<!-- Pipe 1 -->
+<td>{{ p.qty }}</td>
+<td>{{ p.price | currency: 'INR': 'symbol' }}</td> <!-- Pipe 2 -->
+</tr>
+</tbody>
+</table>
